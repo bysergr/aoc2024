@@ -49,11 +49,11 @@ fn part1(contents: String) -> io::Result<()> {
         }
     }
 
-    println!("Safe reports: {}", safe_reports);
+    println!("Part 1: Safe reports: {}", safe_reports);
     Ok(())
 }
 
-fn is_safe(levels: &Vec<i32>) -> Option<usize> {
+fn is_safe(levels: &[i32]) -> Option<usize> {
     let mut trend: &str = "";
 
     for i in 0..levels.len() - 1 {
@@ -123,7 +123,7 @@ fn part2(contents: String) -> io::Result<()> {
         safe_reports += 1;
     }
 
-    println!("Safe reports: {}", safe_reports);
+    println!("Part 2: Safe reports: {}", safe_reports);
     Ok(())
 }
 

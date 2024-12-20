@@ -49,7 +49,6 @@ fn part2(contents: &str) {
         }
 
         let slice = line.split_once("do()");
-
         if slice.is_none() {
             continue;
         }
